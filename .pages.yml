@@ -1,0 +1,107 @@
+# Admin interface: https://app.pagescms.org (GitHub sign-in required)
+# This config is deliberately editable WITHOUT HTML/code changes.
+media:
+  input: media
+  output: /media
+  categories: [image]
+  rename: safe
+content:
+  - name: company
+    label: "01 · Branding and Company"
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: brand_name
+        label: Brand name (PRISMA GLOBAL EXPORT)
+        type: string
+        required: true
+        readonly: true
+      - name: brand_top
+        label: Logo text (top line)
+        type: string
+        required: true
+      - name: brand_bottom
+        label: Logo text (bottom line)
+        type: string
+        required: true
+      - name: logo
+        label: Small brand icon (header and footer)
+        type: image
+      - name: full_logo
+        label: Full logo image (company profile)
+        type: image
+      - name: tagline_first
+        label: Homepage headline - first line
+        type: string
+      - name: tagline_second
+        label: Homepage headline - gold second line
+        type: string
+      - name: hero_intro
+        label: Homepage introduction (English)
+        type: text
+      - name: about_first
+        label: About us - paragraph 1
+        type: text
+      - name: about_second
+        label: About us - paragraph 2
+        type: text
+      - name: whatsapp
+        label: WhatsApp (country code + number, digits only)
+        type: string
+        required: true
+      - name: phone_display
+        label: Phone for visitors (international format)
+        type: string
+      - name: email
+        label: Business email
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: legal_entity
+        label: Legal company name (based on registered entity)
+        type: string
+        readonly: true
+  - name: catalog
+    label: "02 · Export Products"
+    type: file
+    path: data/products.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Short identifier (unique)
+        type: string
+        required: true
+      - name: published
+        label: Display on website?
+        type: boolean
+      - name: title
+        label: Product title
+        type: string
+        required: true
+      - name: category
+        label: Product category
+        type: string
+      - name: status
+        label: Product status (verify before marking ready)
+        type: select
+        options:
+          values: [Product Development, Under Review, Available After Verification]
+      - name: description
+        label: Buyer-facing product description (English)
+        type: text
+      - name: image
+        label: Product photograph / illustration
+        type: image
+      - name: image_alt
+        label: Image description
+        type: string
+      - name: tags
+        label: Short specification tags
+        type: string
+        list: true
+      - name: footer_note
+        label: Small note under product
+        type: string
