@@ -1,0 +1,47 @@
+[
+  {
+    "id": "wood-art",
+    "published": true,
+    "title": "Layered Wooden Wall Art",
+    "category": "Wood décor",
+    "status": "Product Development",
+    "description": "Multi-layer wooden wall art with Indonesian-inspired patterns. Design, materials, finishing and order feasibility are confirmed per request.",
+    "image": "/media/wood-art.svg",
+    "image_alt": "Illustration of layered wooden wall art",
+    "tags": [
+      "Decorative Art",
+      "Custom Designs"
+    ],
+    "footer_note": "Samples & details on request"
+  },
+  {
+    "id": "charcoal",
+    "published": true,
+    "title": "Coconut Charcoal Briquettes",
+    "category": "Third-party sourcing",
+    "status": "Under Review",
+    "description": "Potential sourcing requests for Indonesian coconut-shell charcoal briquettes. Supplier availability, quality tests, trade permissions and terms must be verified.",
+    "image": "/media/charcoal.svg",
+    "image_alt": "Illustration of coconut charcoal briquettes",
+    "tags": [
+      "Shisha / Hookah",
+      "Bulk Inquiries"
+    ],
+    "footer_note": "Feasibility to confirm"
+  },
+  {
+    "id": "jasmine",
+    "published": true,
+    "title": "Fresh Jasmine Flowers",
+    "category": "Third-party sourcing",
+    "status": "Under Review",
+    "description": "Fresh jasmine sourcing enquiries are reviewed individually; availability, cold-chain handling, plant-health rules and import requirements are not pre-approved.",
+    "image": "/media/jasmine.svg",
+    "image_alt": "Illustration of fresh jasmine flowers",
+    "tags": [
+      "Fresh Floral",
+      "Supply Assessment"
+    ],
+    "footer_note": "Feasibility to confirm"
+  }
+]
